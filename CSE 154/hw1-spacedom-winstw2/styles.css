@@ -1,0 +1,151 @@
+/*
+    Name: Winston Wihono
+    Date: April 10, 2024
+    Section: CSE 154 AL
+    This is the styles.css page and it contains all the stylistic features of the page. These
+    include text colors, font, positioning, and any other visual effects on space.html.
+ */
+body {
+  font-family: 'Share Tech Mono', monospace;
+  background-image: url('img\\background.png');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+}
+
+header > h1 {
+  font-family: 'Lora', serif;
+  text-transform: uppercase;
+  font-size: 120px;
+  margin-bottom: 0px;
+  text-shadow: #551756 20px 15px 20px;
+}
+
+header > *, #jokes, #joke-container {
+  color: #E0DBD7;
+}
+
+header blockquote {
+  margin-top: 0px;
+  font-size: 22px;
+}
+
+header {
+  height: 100vh;
+}
+
+header, #joke-container article {
+  flex-direction: column;
+  justify-content: center;
+}
+
+footer, #intro, #facts {
+  background-color: #E0DBD7;
+}
+
+footer {
+  width: 100%;
+}
+
+footer p, #joke-container article {
+  padding: 20px;
+}
+
+#intro, #jokes, #facts {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+#intro h2, #facts h2, #jokes h2 {
+  font-size: 35px;
+  text-decoration: underline;
+}
+
+#jokes > p, #intro h2, #facts h2, #jokes h2, footer p {
+  text-align: center;
+}
+
+#joke-container, header, #joke-container article, #joke-container p {
+  align-items: center;
+}
+
+#joke-container {
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+#joke-container article {
+  background-color: #9B590D;
+  opacity: 80%;
+  margin: 15px;
+  height: 400px;
+  width: 300px;
+}
+
+#joke-container img {
+  height: 150px;
+  width: 150px;
+}
+
+#joke-container p, #joke-container article, #joke-container, header, #intro section {
+  display: flex;
+}
+
+#joke-container p, .answer {
+  font-size: 24px;
+}
+
+.answer {
+  visibility: hidden;
+  color: #191818;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+article:hover .answer, #joke-container p:hover .answer {
+  visibility: visible;
+  width: auto;
+  height: auto;
+}
+
+#joke-container abbr {
+  font-size: 28px;
+}
+
+hr {
+  width: 60%;
+}
+
+#intro, #facts {
+  padding: 30px;
+  border-top: 15px solid #551756;
+  border-bottom: 15px solid #551756;
+}
+
+#intro img {
+  width: 24vw;
+  height: 100%;
+  border-radius: 10%;
+  margin-right: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+#facts p {
+  font-size: 25px;
+}
+
+#facts ol li, #intro p {
+  font-size: 20px;
+}
+
+a:link {
+  color: #FFA605;
+}
+
+a:visited {
+  color: #1B505F;
+}

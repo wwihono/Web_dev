@@ -1,0 +1,42 @@
+/*
+  Name: Winston Wihono
+  Date: April 10, 2024
+  Section: CSE 154 AL
+  CSS for the #creative section of the webpage
+  This stylesheet provides styling for a creative content section
+  including layout, fonts, and colors.
+*/
+#creative {
+  font-size: 24px;
+}
+
+#creative a {
+  text-align: right;
+  margin-top: 30px;
+}
+
+#creative h2 {
+  font-size: 35px;
+  color: #E0DBD7;
+  text-align: center;
+  text-decoration: solid;
+}
+
+#creative-container img {
+  height: 250px;
+  width: 25%;
+}
+
+#creative-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+#creative article {
+  background-color: #E0DBD7;
+  padding: 15px;
+  border: plum solid 5px;
+}

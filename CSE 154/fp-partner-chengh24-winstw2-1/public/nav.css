@@ -1,0 +1,65 @@
+nav {
+  Display: flex;
+  padding: 1.5rem 2rem 1.5rem 2rem;
+  justify-content: space-between;
+}
+
+nav section {
+  Display: flex;
+  gap: 2rem;
+	align-items: center;
+}
+
+.store-name {
+  font-family: "Cedarville Cursive", cursive;
+  font-size: 2.2rem;
+}
+
+nav ul {
+  Display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav a, .store-name a {
+  text-decoration: none;
+  color: inherit;
+}
+
+nav ul a:after {
+  display:block;
+  content: '';
+  border-bottom: solid 1px black;
+  transform: scaleX(0);
+  transition: transform 0.3s;
+}
+
+nav ul a:hover:after {
+  transform: scaleX(1);
+}
+
+nav ul li {
+  list-style-type: none;
+  padding: 1rem;
+  text-align: center;
+  margin: 0;
+}
+
+nav button {
+  padding: 0 1.5rem;
+  background-color: transparent;
+  border-width: 0;
+	transition-duration: 0.3s;
+}
+
+nav button:hover {
+	transform: translate(12px);
+	cursor: pointer;
+}
+
+header h1 {
+  text-align: center;
+  margin: 0;
+  padding: 5rem 0;
+  background-color: #e0af65;
+}

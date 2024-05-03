@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--
+  Name: Winston Wihono
+  Section: AF
+  Date: 4/16/2024
+
+  This is the "minigame" chest opener page. It generates a random image of a cartoon cat
+  when the button is pressed to initialize the randomizer. The chest imports some sfx which
+  will play when the button is pressed.
+  -->
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="lootbox.css">
+  <script src="lootbox.js"></script>
+  <title>lootbox</title>
+</head>
+
+<body>
+  <div class="navbar">
+    <a href="index.html" class="navbar">Homepage</a>
+    <a href="lootbox.html" class="navbar">Cat randomizer</a>
+  </div>
+  <h1>
+    Cat lootbox
+  </h1>
+  <!-- Audio was taken from youtube https://www.youtube.com/watch?v=jEheNftCtyQ -->
+  <div id="lootbox-container" class="chest"></div>
+  <audio id="chest-sfx" preload="auto">
+    <source src="assets/media/chest.mp3" type="audio/mp3">
+    Your browser does not support this audio
+  </audio>
+  <div class="button-container">
+    <button id="lootbox-launch">Activate randomizer</button>
+  </div>
+  <footer>
+    <p>
+      follow @w.wihono_23
+    </p>
+  </footer>
+</body>
+
+</html>

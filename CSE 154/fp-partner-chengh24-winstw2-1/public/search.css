@@ -1,0 +1,35 @@
+main {
+  margin: 8rem 3rem;
+}
+
+#item-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-flow: wrap row;
+  gap: 2rem;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.item img {
+  height: auto;
+  width: 20vw;
+}
+
+.item button {
+  height: 3rem;
+  width: 100%;
+  justify-content: center;
+}
+
+.item button:focus {
+  border-color: gray;
+  box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+  outline: 0;
+}

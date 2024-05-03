@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--
+  Name: Winston Wihono
+  Section: AF
+  Date: 4/16/2024
+
+  This is the homepage for a cat lovers website. It contains some fun, little known facts about
+  cats. This page can redirect to the other two pages that the website contains, lootbox.html and
+  cat.html
+  -->
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="index.js"></script>
+  <title>cats</title>
+</head>
+
+<body>
+  <div class="navbar">
+    <a href="index.html" class="navbar">Homepage</a>
+    <a href="lootbox.html" class="navbar">Cat randomizer</a>
+  </div>
+  <section>
+    <h1>Dear Cat Lovers</h1>
+    <!-- Cat gif from giphy.com -->
+    <img src="assets/cat.gif" alt="Cat sleeping on window" id="kitty">
+  </section>
+  <div id="fact-container">
+    <h2>Pawtastic facts</h2>
+    <p class="question">
+      Q: Did you know that cats have been to space?
+    </p>
+    <button id="reveal1" class="reveal">Reveal fact</button>
+    <p>
+      <!-- Fact from purina.co.uk -->
+      <span id="answer1" class="answer answer-hidden">
+        A: In 1963, a French cat named Félicette survived a trip to outer space.<br>
+        She has since been honored for this feat with a bronze statue that cost $57,000.
+      </span>
+    </p>
+    <div id="rocket-container"></div>
+    <p class="question">
+      Q: Did you know that cats can really jump?
+    </p>
+    <button id="reveal2" class="reveal">Reveal fact</button>
+    <p>
+      <!-- Fact from www.viagenpets.com -->
+      <span id="answer2" class="answer answer-hidden">
+        A: Cats can jump 5 times their height!
+      </span>
+    </p>
+  </div>
+  <footer>
+    <p>
+      follow @w.wihono_23
+    </p>
+  </footer>
+</body>
+
+</html>

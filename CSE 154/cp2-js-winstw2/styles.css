@@ -1,0 +1,145 @@
+/*
+  Name: Winston Wihono
+  Section: AF
+  Date: 4/16/2024
+
+  This is the stylesheet for the index.html page. It contains all the visual style edits and
+  customizations for the page. This page controls the fonts, colors and placements of all the
+  components of index.html. It also handles properties that will be applied dynamically using
+  the index.js script such as the rocket and its animation.
+*/
+
+body {
+  font-family: "Lilita One", sans-serif;
+  background-color: #c9cfff;
+}
+
+h1 {
+  font-size: 50px;
+  text-align: center;
+  margin-top: 30px;
+  text-decoration: underline;
+}
+
+.navbar {
+  display: flex;
+  background-color: #ffe4c4;
+  width: 100%;
+  left: 0;
+  border: black solid 2px;
+  -webkit-text-stroke: black 1px;
+  text-shadow: 2px 2px black;
+}
+
+.navbar a {
+  position: relative;
+  font-size: 25px;
+  color: beige;
+  text-decoration: none;
+  padding: 15px;
+  padding-left: 10px;
+}
+
+.navbar a:hover {
+  background-color: rgb(201, 170, 132);
+}
+
+#kitty {
+  float: inline-end;
+  position: relative;
+  height: 280px;
+  width: 360px;
+  margin-right: 100px;
+  border: solid black 4px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px;
+}
+
+h2 {
+  font-size: 35px;
+  text-shadow: #c9cfff 1px;
+}
+
+.question,
+.answer {
+  font-size: 25px;
+}
+
+.answer-hidden {
+  visibility: hidden;
+}
+
+.answer-revealed {
+  visibility: block;
+}
+
+#fact-container {
+  background-color: #e4b57b;
+  width: 50%;
+  padding-left: 10px;
+  border: solid black 4px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px;
+}
+
+/* Design modified from https://getcssscan.com/css-buttons-examples */
+button {
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  background-color: #ffe4c4;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px;
+  position: relative;
+}
+
+/* Design modified from https://getcssscan.com/css-buttons-examples */
+button:active {
+  background-color: rgb(201, 170, 132);
+  box-shadow: 1px 1px 0px 0px;
+  top: 2px;
+  left: 2px;
+}
+
+footer {
+  position: fixed;
+  width: 100%;
+  background-color: blanchedalmond;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+  margin-top: 100;
+  padding: 2px;
+}
+
+/* Rocket properties that will be applied when it is toggled onto the page. */
+#rocket {
+  width: 50px;
+  height: auto;
+  position: fixed;
+  animation: takeoff 7s forwards;
+}
+
+/* Keyframe at-rule handling the takeoff animation for the rocket */
+
+@keyframes takeoff {
+  0% {
+    transform: translateX(0) rotate(0deg);
+    opacity: 1;
+  }
+
+  10% {
+    transform: rotate(90deg);
+  }
+
+  100% {
+    transform: translateX(100vw) rotate(90deg);
+  }
+}

@@ -1,0 +1,136 @@
+/*
+  Name: Winston Wihono
+  Section: AF
+  Date: 4/16/2024
+
+  This is the stylesheet for the lootbox.html page. It contains all the visual style edits and
+  customizations for the page. This page controls the fonts, colors and placements of all the
+  components of lootbox.html. This page also provides the animation for the chest opening and also
+  contains the image resizing and positioning properties to make it overlay the chest when
+  generated. Colors used and fonts are the same as styles.css to create a consistent feel.
+*/
+
+body {
+  font-family: "Lilita One", sans-serif;
+  background-color: #c9cfff;
+}
+
+h1 {
+  position: relative;
+  font-size: 50px;
+  text-align: center;
+  margin-top: 30px;
+  text-decoration: underline;
+}
+
+.navbar {
+  display: flex;
+  background-color: #ffe4c4;
+  width: 100%;
+  left: 0;
+  border: black solid 2px;
+  -webkit-text-stroke: black 1px;
+  text-shadow: 2px 2px black;
+  position: relative;
+}
+
+.navbar a {
+  position: relative;
+  font-size: 25px;
+  color: beige;
+  text-decoration: none;
+  padding: 15px;
+  padding-left: 10px;
+}
+
+.navbar a:hover {
+  background-color: rgb(201, 170, 132);
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  /* Centers horizontally */
+  align-items: center;
+  /* Centers vertically */
+  height: calc(100vh - 60px);
+  width: -60px;
+  position: relative;
+}
+
+/* Design modified from https://getcssscan.com/css-buttons-examples */
+button {
+  position: relative;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  background-color: #ffe4c4;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  bottom: 250px;
+  left: 5px;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px;
+}
+
+/* Design modified from https://getcssscan.com/css-buttons-examples */
+button:active {
+  background-color: rgb(79, 233, 41);
+  box-shadow: 1px 1px 0px 0px;
+  transform: translate(2px, 2px);
+}
+
+/* Chest Sprites found on https://admurin.itch.io/free-chest-animations
+   All animations and scaling were done by myself using a youtube tutorial.
+*/
+.chest {
+  position: relative;
+  top: 50%;
+  left: 40%;
+  width: 480px;
+  height: 320px;
+  background-image: url('assets/chest.png');
+  background-repeat: no-repeat;
+  display: flex;
+  background-position: 0px -1920px;
+  image-rendering: pixelated;
+  background-size: 2400px 2560px;
+}
+
+.chest-unlock {
+  animation: unlock 3s steps(5) forwards;
+}
+
+@keyframes unlock {
+  0% {
+    background-position: 0px -2240px;
+  }
+
+  100% {
+    background-position: -2400px -2240px;
+  }
+}
+
+.generated-image {
+  position: relative;
+  top: 5%;
+  left: -70px;
+  width: 480px;
+  height: 320px;
+}
+
+footer {
+  position: fixed;
+  width: 100%;
+  background-color: blanchedalmond;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+  margin-top: 100;
+  padding: 2px;
+}

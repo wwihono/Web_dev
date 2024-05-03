@@ -1,0 +1,200 @@
+/*  */
+
+body {
+  background-color: #16425B;
+  scrollbar-width: thin;
+  font-family: 'nunito', sans-serif;
+}
+
+h1 { 
+  font-size: 35px;
+}
+
+.align, h2 { 
+  font-size: 20px;
+  color: #eaeff3;
+}
+
+/* image from MMOs.com */
+#title, h1 {
+  color: #eaeff3;
+  outline-color: aliceblue;
+  outline: auto;
+  background-image: url('img/dragonlore.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 105%;
+  max-height: max-content;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.sep {
+  max-width: fit-content;
+}
+
+.gun-column {
+  display:flex;
+  flex-direction: column;
+  max-width: fit-content;
+  gap: 10px;
+}
+
+.gun-container {
+  column-span: 1;
+  height: 16.666%; /* This is the 1/6th height */
+  height: auto; /* This overrides the previous height in screens with small (sm) breakpoint */
+  border: 1px solid #000000; /* Example of border style */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0px 4px 8px 10px rgba(0, 0, 0, 0.1); /* Shadow for the element */
+  background-color: #81C3D7;
+  border-bottom-width: 4px; /* Thick bottom border */
+  margin-bottom: 12px; /* Margin at the bottom */
+  display: flex;
+  max-width: max-content;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: all 0.3s ease-in-out; /* Smooth transition for all changes */
+  transform: scale(1); /* Initial scale */
+}
+
+.align, h1 {
+  text-align: center;
+  text-decoration: solid;
+  font-weight: bolder;
+  text-shadow: 0px 4px 10px #2386d1;
+  -webkit-text-stroke: 1px black;
+}
+
+#loadout-builder {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 100px;
+}
+
+.gun-img, .melee-img, .agent-img {
+  align-items: center;
+  gap: 25px;
+  justify-content: space-evenly;
+  align-self: stretch;
+}
+
+img {
+  object-fit: contain;
+  flex-grow: 1;
+  max-width: 100%;
+  max-height: 120px;
+}
+
+.gun-container:hover {
+  transform: scale(1.05);
+}
+
+.visible {
+  visibility: visible;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+footer {
+  height: 25px;
+  width: 100%;
+  position: absolute;
+  background-color: #81C3D7;
+  margin-left: -10px;
+  margin-top: 8rem;
+  text-align: center;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color:red;
+}
+
+.form {
+  padding: 10px;
+  border: #000000 1px solid;
+  border-radius: 8px;
+  background-color: blanchedalmond;
+  height: fit-content;
+  margin-top: 20%;
+}
+
+input {
+  justify-content: space-around;
+}
+
+h2 {
+  font-size: large;
+  font-weight: 900;
+  color: #000000;
+  text-shadow: #000000 1px 2px 3px 4px;
+}
+
+/* Button design from open source https://getcssscan.com/css-buttons-examples */
+button:active {
+  box-shadow: #D6D6E7 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+/* Button design from open source https://getcssscan.com/css-buttons-examples */
+button:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+/* Button design from open source https://getcssscan.com/css-buttons-examples */
+button:focus {
+  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+/* Button design from open source https://getcssscan.com/css-buttons-examples */
+button {
+  align-items: center;
+  appearance: none;
+  background-color: #FCFCFD;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #36395A;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono", monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s, transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow, transform;
+  font-size: 18px;
+}
+
+.content-bar {
+  flex-grow: 1;
+  height: 30px;
+  width: 100%;
+  position: absolute;
+  background-color: #d8cfa0;
+  text-align: center;
+  margin-left: -10px;
+  border: #000000 3px solid;
+}

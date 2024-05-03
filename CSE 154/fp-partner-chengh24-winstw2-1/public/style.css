@@ -1,0 +1,92 @@
+body {
+  font-family: "Playfair Display", serif;
+  margin: 0;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+main {
+  display: flex;
+  gap: 6rem;
+  flex-direction: column;
+  margin-top: 8rem;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.item-display {
+  Display: flex;
+  justify-content: space-around;
+}
+
+.img-container {
+  overflow: hidden;
+}
+
+.item-display img {
+  transition: all .3s ease-in-out;
+  object-fit: cover;
+  width: 40vw;
+  max-height: 600px;
+  height: auto;
+}
+
+.item-display section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-display button, .item button {
+  font-family: inherit;
+  background-color: transparent;
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 0;
+}
+
+.arrow, .button-txt {
+  transition-duration: 0.3s;
+}
+
+.item-display .button-txt {
+  margin-right: -1.2rem;
+}
+
+.item-display .arrow {
+  color: transparent;
+}
+
+.item-display button:hover .arrow {
+  color: black;
+}
+
+
+.item-display button:hover .button-txt {
+  margin-right: 1rem;
+}
+
+.item-display img:hover {
+  transform: scale(1.2);
+}
+
+footer {
+	padding: 3rem;
+	margin-top: 8rem;
+  background-color: black;
+  color: white;
+}
+
